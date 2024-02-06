@@ -99,13 +99,14 @@ include('./conexao.php');
 
 
 <?php
+//aqui vamos chamar os duas pastas aonde ter as configurações
 		require_once './post/system/config.php';
 		require_once './post/system/database.php';
-
+//aqui vemos se o id foi enviado com suscesso
 	if (!isset($_GET['id']) || empty($_GET['id']))
 		header('Location: list.php');
 	else {
-
+//aqui vamos pegar as duas variaveis pela foi eita uma prevenção de ataques de injeção SQL
 		$id 	= DBEscape (strip_tags(trim($_GET['id'])));
 		$post 	= DBRead('posts', "WHERE id = '{$id}' LIMIT 1");
 
@@ -114,6 +115,7 @@ include('./conexao.php');
 			$upVisitas = array(
 				'visitas' => $post['visitas'] + 1
 			);
+            //aqui vamos fazer um up nos post caso o usuário visitar
 			DBUpdate('posts', $upVisitas, "id = '{$id}'");
             $_SESSION['visited_post_' . $id] = true;
 		}

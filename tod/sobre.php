@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicoin.png">
    
 
-    <!-- CSS here -->
+    <!-- CSS  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/slicknav.css">
 
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    
 </head>
 
 <body>
@@ -81,7 +81,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -296,7 +295,12 @@ Para garantir a utilização segura e eficiente da plataforma, solicitamos e uti
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                        
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="inicio.php" target="_blank">vagasurgentebr</a>
+Copyright &copy;
+
+<!---isso document.write(new Date().getFullYear()); faz com que nao precisamos altera a data no html-->
+<script>document.write(new Date().getFullYear());</script>
+
+Todos os direitos reservados <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="inicio.php" target="_blank">vagasurgentebr</a>
 
                         </p>
                     </div>

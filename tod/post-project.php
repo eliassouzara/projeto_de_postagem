@@ -1,3 +1,6 @@
+
+<!--Neste codigo vamos persistir que sessão 
+deve estar logado e vamos consultar um dado chamado nome abaixo--->
 <?php
 
 include('protect.php');

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicoin.png">
+    <title>up-vaga</title>
+    <style>       
+
+    body{
+        background-color: rgb(207, 210, 212);
+    }
+     .fot{
+            position: absolute;
+            background-color: #ffff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form class="fot" action="https://api.staticforms.xyz/submit" method="post">
+        <input type="text" name="name" placeholder="Seu nome completo" required>
+        <br>
+        <br>
+        <input type="text" name="number" placeholder="cidade e munucípio" required>
+        <br>
+        <br>
+        <input type="text" name="$myCustomField1" placeholder="categoria?" required>
+        <br>
+        <br>
+        <input type="text" name="$myCustomField2" placeholder="número de telefone WhatsApp ou gmail" required>
+        <br>
+        <br>
+        <input type="text" name="$myCustomField3" placeholder="prova de pagamento" required>
+
+        <br>
+        <br>
+        <input type="text" name="email" placeholder="seu gmail" required />
+        <br>
+        <br>
+        <textarea rows="10" cols="50" name="message" placeholder="mensagem a mais" required ></textarea>
+        <input type="text" name="honeypot" style="display:none">
+        <input type="hidden" name="accessKey" value="44c6018d-2412-44e9-9515-bbca0d6a523c">
+        <input type="hidden" name="subject" value="Contact us from - example.com" />
+        <input type="hidden" name="replyTo" value="@">
+        <input type="hidden" name="redirectTo" value="https://vagasurgentebr.netlify.app/sucessospagamento.html">
+        <input type="submit" value="Submit" />
+    </form>
+
+    <p style=" color: #ff0202;
+    font-family: system-ui;">No local, mensagem a mais, aqui coloque (sempre coloque Vírgula ) exemplo: sexo da pessoa que quer contratar, idade, salário, o que ela vai fazer dentro do projeto e a data da entrega. Horários, quantos pessoas deseja, se é home office ou presencial (caso algumas dessas não se aplique pode deixar em branco)
+    na opção de prova de pagamento coloque o nome completo do pagante ou se e Pix ou PayPal por favor.
+</p>
+</body>
+</html>
